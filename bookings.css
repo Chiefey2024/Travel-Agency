@@ -1,0 +1,108 @@
+.booking-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #f1f5f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.booking-steps {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.booking-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.step:hover {
+  transform: scale(1.05);
+}
+
+.step-image {
+  max-width: 80px;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.step-image:hover {
+  transform: scale(1.1);
+}
+
+.ongoing-trips {
+  flex: 1;
+  text-align: center;
+  background-color: rgba(0, 123, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.trip-info {
+  margin-bottom: 20px;
+}
+
+.greece-image {
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.ongoing-trips h3 {
+  margin: 10px 0;
+  color: #34495e;
+}
+
+.ongoing-trips p {
+  color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .step {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-image {
+    max-width: 60px;
+  }
+
+  .greece-image {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-header {
+    font-size: 2rem;
+  }
+
+  .step-image {
+    max-width: 50px;
+  }
+
+  .info-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-item p {
+    font-size: 0.9rem;
+  }
+}
